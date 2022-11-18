@@ -1,0 +1,195 @@
+@import 'settings';
+
+html {
+	background-color: #fef6db !important;
+	font-family: $font-primary  !important;
+}
+
+.navbar.navbar-default {
+	background-color: #fef6db;
+	padding-bottom: 50px;
+}
+.container-fluid{
+	background-color: #fef6db;
+}
+
+.navbar.navbar-default .navbar-brand:hover {
+	text-decoration: none;
+	cursor: pointer;
+}
+.navbar.navbar-default .navbar-brand{
+	width: 140px;
+	height: 35px;
+	object-fit: cover;
+}
+
+.navbar.navbar-default .nav-link {
+	font-size: 16px;
+	margin: 0 30px;
+	color: #000000;
+	text-decoration: none;
+	text-align: center;
+	cursor: pointer;
+	font-family: $font-primary;
+	font-weight: map-get($map: $fw, $key: regular);
+
+	&:hover {
+		color: #000000;
+	}
+}
+
+.burgerLine {
+	width: 20px;
+	height: 2px;
+	display: block;
+	margin: 5px 0;
+	background: linear-gradient(90deg, #FFE259 0%, #FFA751 100%);
+}
+.autoimgBlock{
+	width: 100%;
+	height: 574px;
+	object-fit: contain;
+}
+.title{
+	font-size: 52px;
+	font-weight: map-get($map:$fw, $key:medium);
+}
+.text{
+	font-size: 20px;
+	max-width: 80%;
+}
+
+.navbar.navbar-default .nav-item:nth-child(6) {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.nav-button {
+	width: 140px;
+	height: 40px;
+	color: #ffffff;
+	background: linear-gradient(90deg, #FFE259 0%, #FFA751 100%);
+	border: none;
+	border-radius: 30px;
+	margin: 0 0 0 62px;
+	font-size: 16px;
+	font-weight: map-get($map: $fw, $key: regular);
+}
+
+
+.navbar.navbar-default .navbar-toggler {
+	background-color: linear-gradient(90deg, #FFE259 0%, #FFA751 100%);
+
+	&:focus {
+		box-shadow: none;
+		outline: none
+	}
+}
+
+.navbar.navbar-default .active {
+	color: #ffffff;
+}
+
+.modal-head {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+.modal-content{
+	background-color: #fef6db ;
+}
+
+.form-control {
+	width: 100%;
+	border: none;
+	border-bottom: 2px solid #000000;
+	border-radius: 0;
+	height: 50px;
+	background-color: #fef6db ;
+
+	&:focus {
+		outline: none;
+		box-shadow: none;
+		border-bottom: 2px solid yellow;
+		background-color: #fef6db ;
+	}
+}
+.navbar.navbar-default .nav-item:nth-child(7) {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-left: 60px;
+}
+
+.btn-close{
+	margin-top: 15px;
+}
+.icon{
+	display: block;
+	margin:0 8px;
+	&:nth-child(1){
+		width: 12px;
+		height: 22px;
+	}
+	&:nth-child(2){
+		width: 22px;
+		height: 18px;
+	}
+	&:nth-child(3){
+		width: 22px;
+		height: 22px;
+	}
+}
+.form-button{
+	width: 160px;
+	height: 40px;
+	border:none;
+	margin-top: 25px;
+	border-radius: 30px;
+	background: linear-gradient(90deg, #FF4E50 0%, #F9D423 100%);
+	color: #ffffff;
+	font-size: 16px;
+	font-weight: map-get($map:$fw, $key:regular );
+	transition: background 1.5s linear;
+	&:hover{
+		background:linear-gradient(90deg, #F9D423 0%, #FF4E50 100%);
+	}
+}
+form{
+	text-align: center;
+}
+.start{
+	width: 200px;
+	height: 50px;
+	border: none;
+	margin-top: 71.5px;
+	border-radius: 30px;
+	background: linear-gradient(90deg, #FF4E50 0%, #F9D423 100%);
+	color: #ffffff;
+	font-size: 16px;
+	font-weight: map-get($map:$fw, $key:regular );
+	transition: background 1.5s linear;
+	&:hover{
+		background:linear-gradient(90deg, #F9D423 0%, #FF4E50 100%);
+	}
+}
+@media screen and(max-width:$breakpoint-lg) {
+	.nav-button {
+		margin: 0;
+		margin-top: 10px;
+	}
+	.navbar.navbar-default .nav-item:nth-child(7) {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin: 0;
+		margin-top: 25px;
+	}
+	.title{
+		font-size: 36px;
+	}
+	.text{
+		font-size: 16px;
+	}
+}
